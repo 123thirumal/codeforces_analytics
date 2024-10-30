@@ -1,0 +1,456 @@
+body{
+    background-color: rgb(5, 3, 14);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/*Welcome Page*/
+.welcome{
+    margin: 0;
+    padding:0px,50px,0px,50px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.welcome .title{
+    color: rgb(200, 196, 221);
+    font-size: 30px;
+    padding: 30px;
+    padding-left: 60px;
+    margin: 0;
+    font-weight: 600;
+}
+.welcome .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.welcome .content .c1{
+    color: rgb(200, 196, 221);
+    font-size: 27px;
+    padding: 0;
+    margin: 10px;
+}
+.welcome .content .c2 {
+    font-size: 70px;
+    background: linear-gradient(to right, rgb(235, 96, 228), rgb(85, 158, 220)); /* Example gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Fallback for Safari */
+    padding: 0;
+    margin: 10px;
+    font-weight: 700;
+}
+.welcome .content .button {
+    background-color: rgb(116, 208, 148);
+    padding: 10px 30px; /* Combined padding for brevity */
+    margin: 20px;
+    margin-bottom: 10px;
+    border-radius: 28px;
+    font-size: 20px;
+    font-weight: 550;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    color: black;
+    text-decoration: none;
+}
+.welcome .content .button:hover {
+    background-color: rgb(89, 180, 115); /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+
+
+
+/*Login Page*/
+.login{
+    margin: 0;
+    padding:0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.login .title{
+    color: rgb(200, 196, 221);
+    font-size: 30px;
+    padding: 30px;
+    padding-left: 60px;
+    margin: 0;
+    font-weight: 600;
+}
+.login .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    color: rgba(255, 255, 255, 0.57);
+    font-size: 20px;
+}
+.login .content .button {
+    background-color: rgb(116, 208, 148);
+    padding: 10px 30px; /* Combined padding for brevity */
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 28px;
+    font-size: 20px;
+    font-weight: 550;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    color: black;
+    text-decoration: none;
+    border: none;
+}
+.login .content .button:hover {
+    background-color: rgb(89, 180, 115); /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+.login .content .input-container {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(55, 50, 50, 0.275);
+    border-radius: 60px;
+    height: 300px;
+    width: 350px;
+}
+.login .content .input-container .c1{
+    color: rgb(200, 196, 221);
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+.login .content .input-container .username-input,
+.login .content .input-container .password-input {
+    width: 320px;
+    border: none; /* Full border */
+    outline: none; /* Remove the outline on focus */
+    font-size: 18px;
+    color: rgb(200, 196, 221); /* Input text color */
+    background: rgba(54, 46, 81, 0.451); /* Make the background transparent */
+    border-radius: 15px; /* Optional: Rounded corners */
+    padding: 15px 10px; /* Optional: Padding for better appearance */
+}
+
+.login .content .input-container .username-input:focus,
+.login .content .input-container .password-input:focus {
+    border: 2px solid rgb(48, 48, 48); /* Change border color on focus */
+    font-size: 20px; /* Keep font size the same */
+}
+
+.login .content .input-container .username-input::placeholder,
+.login .content .input-container .password-input::placeholder {
+    color: rgba(255, 255, 255, 0.508); /* Placeholder color */
+}
+
+.login .content .input-container .button {
+    background-color: rgb(116, 208, 148);
+    padding: 10px 30px; /* Combined padding for brevity */
+    margin: 20px;
+    margin-bottom: 10px;
+    border-radius: 28px;
+    font-size: 20px;
+    font-weight: 550;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    color: black;
+    text-decoration: none;
+    border: none;
+}
+.login .content .input-container .button:hover {
+    background-color: rgb(89, 180, 115); /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+
+
+
+
+/*homepage*/
+.homepage{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.homepage .sidebar{
+    margin: 10px;
+    height: 97%;
+    width: 17vw;
+    background-color:rgba(29, 30, 47, 0.452) /*rgb(6, 7, 29)*/;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.homepage .sidebar .title{
+    color: rgb(200, 196, 221);
+    font-size: 27px;
+    margin: 20px;
+    padding: 0;
+
+}
+.homepage .sidebar .profile-container{
+    display: flex;
+    flex-direction: column;
+}
+.homepage .sidebar .profile{
+    width: 12vw;
+    color: rgb(200, 196, 221);
+    font-size: 19px;
+    margin: 20px;
+    word-wrap: break-word; /* Allows long words to break onto the next line */
+    overflow-wrap: break-word; /* Ensures any long content breaks onto the next line */
+}
+.homepage .sidebar .logout {
+    margin-top: auto; /* Pushes logout to the bottom */
+    background-color: rgb(89, 180, 115);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    align-self: center;
+}
+
+.homepage .sidebar .logout:hover {
+    background-color: rgb(75, 150, 97); /* Slightly darker on hover */
+}
+.homepage .content{
+    margin: 10px;
+    height: 97%;
+    width: 79vw;
+    background-color: rgba(29, 30, 47, 0.452)/*rgb(6, 7, 29)*/;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.homepage .content .search-bar{
+    width: 50vw; /* Adjust width as needed */
+    padding: 8px 12px;
+    margin: 10px; /* Space between search bar and heading */
+    margin-left: 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(59, 54, 76, 0.298);
+    border-radius: 5px;
+    color: rgb(200, 196, 221);
+    outline: none;
+}
+.homepage .content .submit{
+    padding: 8px 12px;
+    margin: 10px; /* Space between search bar and heading */
+    margin-left: 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(59, 54, 76, 0.298);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+.homepage .content .submit:hover{
+    background-color: rgba(59, 54, 76, 0.545);
+}
+.homepage .content .heading{
+    color: rgb(200, 196, 221);
+    margin: 20px;
+    font-size: 27px;
+}
+.homepage .content .tile-container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+}
+.homepage .content .tile-container .tile{
+    height: 100px;
+    min-width: 200px;
+    max-width: fit-content;
+    background-color: rgba(42, 33, 58, 0.456);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.homepage .content .tile-container .tile .trending-icon-1 {
+    color: rgb(200, 196, 221); /* Replace with any color code you prefer */
+    font-size: 37px; /* Adjust size if needed */
+    background: linear-gradient(to bottom, rgb(52, 60, 63), rgb(35, 132, 176)); /* Top to bottom */
+    margin: 20px;
+    border-radius: 13px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage .content .tile-container .tile .trending-icon-2 {
+    color: rgb(200, 196, 221); /* Replace with any color code you prefer */
+    font-size: 37px; /* Adjust size if needed */
+    background: linear-gradient(to bottom, rgb(53, 59, 59), rgb(95, 95, 147)); /* Top to bottom */
+    margin: 20px;
+    border-radius: 13px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage .content .tile-container .tile .leaderboard-icon-1 {
+    color: rgb(200, 196, 221); /* Replace with any color code you prefer */
+    font-size: 37px; /* Adjust size if needed */
+    background: linear-gradient(to bottom, rgb(39, 37, 55), rgb(18, 44, 100)); /* Top to bottom */
+    margin: 20px;
+    border-radius: 13px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage .content .tile-container .tile .leaderboard-icon-2 {
+    color: rgb(200, 196, 221); /* Replace with any color code you prefer */
+    font-size: 37px; /* Adjust size if needed */
+    background: linear-gradient(to bottom, rgb(95, 152, 152), rgb(21, 49, 67)); /* Top to bottom */
+    margin: 20px;
+    border-radius: 13px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage .content .tile-container .tile .element{
+    display: flex;
+    flex-direction: column;
+
+}
+.homepage .content .tile-container .tile .element .head{
+    margin: 5px;
+    padding: 0;
+    color: rgb(200, 196, 221);
+    font-size: 17px;
+}
+.homepage .content .tile-container .tile .element .cont{
+    margin: 5px;
+    padding: 0;
+    color: rgb(200, 196, 221);
+    font-size: 27px;
+}
+.homepage .content .graph{
+    align-self: center;
+    width: 900px !important;
+    height: 330px !important;
+    margin: 20px;
+    background-color: rgba(42, 33, 58, 0.456);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage .modal-overlay{
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000; /* Make sure it's on top */
+}
+.homepage .modal-content{
+    background: linear-gradient(to bottom right, rgb(21, 16, 48), rgb(43, 32, 45));
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.homepage .modal-content .heading{
+    color: rgb(200, 196, 221);
+    font-size: 27px;
+}
+.homepage .close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 27px;
+    cursor: pointer;
+    color: #ffffffa2;
+}
+
+
+
+
+/*compare page*/
+.compare{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, rgb(10, 1, 30), rgb(27, 1, 25));
+}
+.compare .title{
+    color: rgb(200, 196, 221);
+    font-size: 55px;
+    font-weight: 500;
+    padding: 0;
+    margin: 10px;
+    align-self: center;
+}
+.compare .compare-container{
+    display: flex;
+    flex-direction: row;
+    color: rgb(200, 196, 221);
+    align-items: center;
+    justify-content: space-around;
+}
+.compare .compare-container .user-comparison{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.compare .compare-container .user-comparison .graph{
+    padding: 0 20px;
+    align-self: center;
+    width: 500px !important;
+    height: 330px !important;
+    margin: 20px;
+    background-color: rgba(42, 33, 58, 0.263);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
