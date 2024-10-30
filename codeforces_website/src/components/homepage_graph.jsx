@@ -5,7 +5,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement
 // Register the required components for Chart.js
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-function RatingProgressionChart({ data }) {
+function RatingProgressionChart({ data, blue,username }) {
     if (!Array.isArray(data)) {
         console.warn("RatingProgressionChart received invalid data:", data);
         return <p>No rating progression data available</p>;
@@ -15,11 +15,11 @@ function RatingProgressionChart({ data }) {
         labels: data.map(item => new Date(item.ratingUpdateTimeSeconds * 1000).toLocaleDateString()),
         datasets: [
             {
-                label: "Rating Progression",
+                label: `${username}'s Rating Progression`,
                 data: data.map(item => item.newRating),
                 fill: false,
-                backgroundColor: "rgb(75, 192, 192)",
-                borderColor: "rgba(75, 192, 192, 0.2)",
+                backgroundColor: (blue)?"rgb(75, 192, 192)":"rgb(255, 99, 132)",
+                borderColor: (blue)?"rgb(75, 192, 192,0.395)":"rgb(255, 99, 132,0.395)",
             }
         ]
     };

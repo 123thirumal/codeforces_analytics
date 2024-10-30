@@ -191,7 +191,7 @@ function Homepage() {
                     {loading ? (
                         <p style={{ color: 'white' }}>Loading rating progression...</p>
                     ) : (
-                        <RatingProgressionChart data={userRatings} />
+                        userInfo &&<RatingProgressionChart data={userRatings} blue={true} username={userInfo.handle}/>
                     )}
                 </div>
             </div>
