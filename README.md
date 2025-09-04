@@ -45,4 +45,4 @@ It allows users to log in using their **Codeforces credentials** and provides po
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/codeforces-analytics.git
+git clone https://github.com/123thirumal/codeforces-analytics.git
